@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.37216.2 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DineFlow.API", "DineFlow.API\DineFlow.API.csproj", "{69EB44BD-2A7B-4EAD-B262-A1D2ED4DE665}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DineFlow.Domain", "DineFlow.Domain\DineFlow.Domain.csproj", "{C5D3807F-92FA-4C79-B1CD-310D96F86BEB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DineFlow.Application", "DineFlow.Application\DineFlow.Application.csproj", "{1148FCD1-8D00-4198-83AD-92E4D275BC0F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DineFlow.Infrastructure", "DineFlow.Infrastructure\DineFlow.Infrastructure.csproj", "{16CB4453-F761-419B-BB82-EFC2BADE5F02}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DineFlow.Tests.Unit", "DineFlow.Tests.Unit\DineFlow.Tests.Unit.csproj", "{13986244-E2AF-4B4A-B088-D5512DE05A37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DineFlow.Tests.Integration", "DineFlow.Tests.Integration\DineFlow.Tests.Integration.csproj", "{1F3DD5E1-CA49-41CA-97AD-C6AD2E66275A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69EB44BD-2A7B-4EAD-B262-A1D2ED4DE665}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69EB44BD-2A7B-4EAD-B262-A1D2ED4DE665}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69EB44BD-2A7B-4EAD-B262-A1D2ED4DE665}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69EB44BD-2A7B-4EAD-B262-A1D2ED4DE665}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5D3807F-92FA-4C79-B1CD-310D96F86BEB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5D3807F-92FA-4C79-B1CD-310D96F86BEB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5D3807F-92FA-4C79-B1CD-310D96F86BEB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5D3807F-92FA-4C79-B1CD-310D96F86BEB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1148FCD1-8D00-4198-83AD-92E4D275BC0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1148FCD1-8D00-4198-83AD-92E4D275BC0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1148FCD1-8D00-4198-83AD-92E4D275BC0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1148FCD1-8D00-4198-83AD-92E4D275BC0F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{16CB4453-F761-419B-BB82-EFC2BADE5F02}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{16CB4453-F761-419B-BB82-EFC2BADE5F02}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{16CB4453-F761-419B-BB82-EFC2BADE5F02}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{16CB4453-F761-419B-BB82-EFC2BADE5F02}.Release|Any CPU.Build.0 = Release|Any CPU
+		{13986244-E2AF-4B4A-B088-D5512DE05A37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{13986244-E2AF-4B4A-B088-D5512DE05A37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{13986244-E2AF-4B4A-B088-D5512DE05A37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{13986244-E2AF-4B4A-B088-D5512DE05A37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1F3DD5E1-CA49-41CA-97AD-C6AD2E66275A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1F3DD5E1-CA49-41CA-97AD-C6AD2E66275A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1F3DD5E1-CA49-41CA-97AD-C6AD2E66275A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1F3DD5E1-CA49-41CA-97AD-C6AD2E66275A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {24635F91-BD5F-45FA-984A-17483E3A64F2}
+	EndGlobalSection
+EndGlobal
