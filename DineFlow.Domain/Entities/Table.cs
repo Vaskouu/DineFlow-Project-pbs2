@@ -17,5 +17,5 @@ public class Table : BaseEntity
 
     public Guid DiningZoneId { get; set; }
     public DiningZone DiningZone { get; set; } = null!;
-    public ICollection<Order> Orders { get; set; } = new List<Order>();
+    public ICollection<Order> Orders { get; set; } = new List<Order>(); 
 }
