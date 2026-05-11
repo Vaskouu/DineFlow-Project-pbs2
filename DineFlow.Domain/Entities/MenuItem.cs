@@ -17,4 +17,5 @@ public class MenuItem : BaseEntity
 
     public Guid CategoryId { get; set; }
     public MenuCategory Category { get; set; } = null!;
+    public ICollection<OrderItem> OrderItems { get; set; } = new List<OrderItem>();
 }
