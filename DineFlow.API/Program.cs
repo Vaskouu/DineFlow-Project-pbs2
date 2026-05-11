@@ -1,3 +1,5 @@
+using DineFlow.Application.Interfaces;
+using DineFlow.Application.Services;
 using DineFlow.Infrastructure.Data;
 using Microsoft.EntityFrameworkCore;
 
@@ -19,8 +21,14 @@ namespace DineFlow.API
             // =========================
             // SERVICES
             // =========================
+
+            // Establishment Service
+            builder.Services.AddScoped<IEstablishmentService, EstablishmentService>();
+
+            // Controllers
             builder.Services.AddControllers();
 
+            // Swagger
             builder.Services.AddEndpointsApiExplorer();
             builder.Services.AddSwaggerGen();
 
@@ -29,6 +37,7 @@ namespace DineFlow.API
             // =========================
             // PIPELINE
             // =========================
+
             if (app.Environment.IsDevelopment())
             {
                 app.UseSwagger();
