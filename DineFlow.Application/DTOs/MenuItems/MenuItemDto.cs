@@ -1,9 +1,15 @@
-﻿namespace DineFlow.Domain.Entities;
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace DineFlow.Application.DTOs.MenuItems;
 
 /// <summary>
-/// Represents a menu item.
+/// DTO for menu item response.
 /// </summary>
-public class MenuItem
+public class MenuItemDto
 {
     public Guid Id { get; set; }
 
@@ -19,10 +25,5 @@ public class MenuItem
 
     public Guid CategoryId { get; set; }
 
-    public MenuCategory Category { get; set; } = null!;
-
     public bool IsActive { get; set; }
-
-    public ICollection<OrderItem> OrderItems { get; set; }
-        = new List<OrderItem>();
 }

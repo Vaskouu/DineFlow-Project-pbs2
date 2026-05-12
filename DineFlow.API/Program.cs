@@ -1,6 +1,8 @@
 using DineFlow.Application.Interfaces;
 using DineFlow.Application.Services;
 using DineFlow.Infrastructure.Data;
+using DineFlow.Application.Interfaces;
+using DineFlow.Application.Services;
 using Microsoft.EntityFrameworkCore;
 
 namespace DineFlow.API
@@ -27,6 +29,9 @@ namespace DineFlow.API
             builder.Services.AddScoped<IDiningZoneService, DiningZoneService>();
             builder.Services.AddScoped<ITableService, TableService>();
             builder.Services.AddScoped<IMenuService, MenuService>();
+            builder.Services.AddScoped<IMenuCategoryService, MenuCategoryService>();
+            builder.Services.AddScoped<IMenuItemService, MenuItemService>();
+            builder.Services.AddScoped<IOrderService, OrderService>();
 
             // Controllers
             builder.Services.AddControllers();
