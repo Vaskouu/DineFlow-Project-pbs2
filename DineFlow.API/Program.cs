@@ -24,6 +24,9 @@ namespace DineFlow.API
 
             // Establishment Service
             builder.Services.AddScoped<IEstablishmentService, EstablishmentService>();
+            builder.Services.AddScoped<IDiningZoneService, DiningZoneService>();
+            builder.Services.AddScoped<ITableService, TableService>();
+            builder.Services.AddScoped<IMenuService, MenuService>();
 
             // Controllers
             builder.Services.AddControllers();
