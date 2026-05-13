@@ -9,5 +9,6 @@ namespace DineFlow.Domain.Enums;
 public enum TableStatus
 {
     Free,
-    Occupied
+    Occupied,
+    Reserved
 }

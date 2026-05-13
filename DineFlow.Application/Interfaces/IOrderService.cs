@@ -17,4 +17,8 @@ public interface IOrderService
     Task<OrderDto?> GetByIdAsync(Guid id);
 
     Task<OrderDto> CreateAsync(CreateOrderDto dto);
+
+    Task AddItemAsync(Guid orderId, AddOrderItemDto dto);
+    Task RemoveItemAsync(Guid orderId, Guid menuItemId, int quantity);
+    Task CompleteOrderAsync(Guid orderId);
 }

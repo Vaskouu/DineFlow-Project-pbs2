@@ -18,4 +18,8 @@ public class OrderDto
     public string Status { get; set; } = string.Empty;
 
     public bool IsActive { get; set; }
+
+    public decimal TotalAmount { get; set; }
+
+    public List<OrderItemDto> Items { get; set; } = new();
 }
