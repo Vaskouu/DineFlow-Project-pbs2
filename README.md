@@ -13,15 +13,6 @@ Entity Framework Core
 Unit & Integration Tests
 Clean multilayer architecture
 
-🏗️ Architecture
-DineFlow.sln
-├── DineFlow.API
-├── DineFlow.Application
-├── DineFlow.Domain
-├── DineFlow.Infrastructure
-├── DineFlow.Tests.Unit
-└── DineFlow.Tests.Integration
-
 🚀 Main Features
 Establishments & Tables
 Create/edit/deactivate establishments
