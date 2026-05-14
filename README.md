@@ -1,11 +1,11 @@
 DineFlow Restaurant Ordering API
+
 📌 Overview
 
 DineFlow is an ASP.NET Core Web API project for restaurant management.
 The system manages establishments, dining zones, tables, menus, menu items, orders, payments, and real-time notifications.
 
 The project includes:
-
 REST API
 GraphQL API
 SignalR notifications
@@ -34,7 +34,6 @@ Complete orders after payment
 Real-Time Notifications
 
 SignalR notifications for:
-
 New orders
 Status changes
 Payments
@@ -50,16 +49,12 @@ Order statuses follow valid transitions
 Payments must be valid and positive
 
 🧪 Testing
-
 The project includes:
-
 Minimum 12 unit tests
 Minimum 8 integration tests
 
 📄 Documentation
-
 The project contains:
-
 XML comments
 Swagger documentation
 README instructions
