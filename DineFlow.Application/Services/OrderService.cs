@@ -258,4 +258,9 @@ public class OrderService : IOrderService
 
         await _context.SaveChangesAsync();
     }
+
+    public Task CancelOrderAsync(Guid orderId)
+    {
+        throw new NotImplementedException();
+    }
 }

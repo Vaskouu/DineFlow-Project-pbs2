@@ -105,4 +105,21 @@ public class OrdersController : ControllerBase
             return BadRequest(ex.Message);
         }
     }
+    /// <summary>
+    /// Completes order.
+    /// </summary>
+    [HttpPost("{id}/complete")]
+    public async Task<IActionResult> CompleteOrder(Guid id)
+    {
+        try
+        {
+            await _orderService.CompleteOrderAsync(id);
+
+            return Ok("Order completed successfully.");
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
 }
