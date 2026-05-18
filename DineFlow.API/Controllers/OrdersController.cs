@@ -122,4 +122,21 @@ public class OrdersController : ControllerBase
             return BadRequest(ex.Message);
         }
     }
+    /// <summary>
+    /// Cancels order.
+    /// </summary>
+    [HttpPost("{id}/cancel")]
+    public async Task<IActionResult> CancelOrder(Guid id)
+    {
+        try
+        {
+            await _orderService.CancelOrderAsync(id);
+
+            return Ok("Order cancelled successfully.");
+        }
+        catch (Exception ex)
+        {
+            return BadRequest(ex.Message);
+        }
+    }
 }

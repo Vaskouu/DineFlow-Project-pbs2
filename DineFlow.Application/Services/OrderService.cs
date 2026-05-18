@@ -259,8 +259,34 @@ public class OrderService : IOrderService
         await _context.SaveChangesAsync();
     }
 
-    public Task CancelOrderAsync(Guid orderId)
+    /// <summary>
+    /// Cancels order.
+    /// </summary>
+    public async Task CancelOrderAsync(Guid orderId)
     {
-        throw new NotImplementedException();
+        var order = await _context.Orders
+            .Include(o => o.Table)
+            .FirstOrDefaultAsync(o => o.Id == orderId);
+
+        if (order == null)
+        {
+            throw new Exception("Order not found.");
+        }
+
+        if (order.Status == OrderStatus.Cancelled)
+        {
+            throw new Exception("Order already cancelled.");
+        }
+
+        if (order.Status == OrderStatus.Completed)
+        {
+            throw new Exception("Completed order cannot be cancelled.");
+        }
+
+        order.Status = OrderStatus.Cancelled;
+
+        order.Table.Status = TableStatus.Free;
+
+        await _context.SaveChangesAsync();
     }
 }
